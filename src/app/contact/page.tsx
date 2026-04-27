@@ -34,14 +34,13 @@ export default function Contact() {
             <div className="space-y-12">
               <div>
                 <p className="uppercase tracking-widest text-xs font-semibold text-muted-foreground mb-3">Email</p>
-                <a href="mailto:hello@shishirpandey.in" className="text-xl text-primary hover:text-secondary transition-colors">hello@shishirpandey.in</a>
+                <a href="mailto:info@shishirpandey.in" className="text-xl text-primary hover:text-secondary transition-colors">info@shishirpandey.in</a>
               </div>
               
               <div>
                 <p className="uppercase tracking-widest text-xs font-semibold text-muted-foreground mb-3">Phone</p>
-                <a href="tel:+910000000000" className="text-xl text-primary hover:text-secondary transition-colors block mb-2">+91 00000 00000</a>
-                {/* TODO: Replace with the actual WhatsApp number */}
-                <a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" className="text-sm font-medium tracking-wide text-secondary hover:underline">
+                <a href="tel:+919993512608" className="text-xl text-primary hover:text-secondary transition-colors block mb-2">+91 99935 12608</a>
+                <a href="https://wa.me/919993512608" target="_blank" rel="noopener noreferrer" className="text-sm font-medium tracking-wide text-secondary hover:underline">
                   Message on WhatsApp &rarr;
                 </a>
               </div>

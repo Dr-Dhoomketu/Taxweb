@@ -412,11 +412,11 @@ export default function Home() {
             <div className="space-y-6 text-muted-foreground">
               <div>
                 <span className="block text-sm font-medium text-foreground uppercase tracking-widest mb-1">Email</span>
-                <a href="mailto:hello@shishirpandey.in" className="text-lg hover:text-primary transition-colors">hello@shishirpandey.in</a>
+                <a href="mailto:info@shishirpandey.in" className="text-lg hover:text-primary transition-colors">info@shishirpandey.in</a>
               </div>
               <div>
                 <span className="block text-sm font-medium text-foreground uppercase tracking-widest mb-1">Phone</span>
-                <a href="tel:+910000000000" className="text-lg hover:text-primary transition-colors">+91 00000 00000</a>
+                <a href="tel:+919993512608" className="text-lg hover:text-primary transition-colors">+91 99935 12608</a>
               </div>
               <div className="pt-4 border-t border-border/50">
                 <p className="text-sm">Based in India · Serving clients PAN India</p>
@@ -435,7 +435,7 @@ export default function Home() {
                 <h3 className="font-serif text-2xl font-semibold mb-2 text-primary">Thank you.</h3>
                 <p className="text-muted-foreground mb-8">We have received your details and will contact you within one business day.</p>
                 <a
-                  href={`https://wa.me/910000000000?text=${encodeURIComponent("Hi, I registered on your website. Please assist.")}`}
+                  href={`https://wa.me/919993512608?text=${encodeURIComponent("Hi, I registered on your website. Please assist.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors uppercase tracking-widest text-sm font-medium rounded-none"
