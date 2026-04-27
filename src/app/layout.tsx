@@ -5,6 +5,9 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 export const metadata: Metadata = {
   title: "ShishirPandey.in | Tax & Compliance Services",
   description: "Chartered Accountant services in India. Simplifying Tax, GST, and Accounting.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
