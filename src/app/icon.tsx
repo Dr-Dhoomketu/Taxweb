@@ -13,10 +13,11 @@ export default function Icon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          fontSize: 24,
-          fontWeight: 500,
+          fontSize: 22,
+          fontWeight: 600,
           color: 'white',
-          background: 'transparent',
+          background: '#1a3a5c',
+          borderRadius: 6,
         }}
       >
         ₹
