@@ -1,0 +1,130 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--border));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --font-sans: var(--app-font-sans);
+  --font-serif: var(--app-font-serif);
+  --font-mono: var(--app-font-mono);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 220 50% 12%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 220 50% 12%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 50% 12%;
+  
+  --primary: 215 70% 38%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 210 70% 55%;
+  --secondary-foreground: 0 0% 100%;
+  
+  --muted: 215 25% 96%;
+  --muted-foreground: 215 15% 45%;
+  
+  --accent: 215 25% 96%;
+  --accent-foreground: 215 70% 38%;
+  
+  --destructive: 0 65% 50%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 215 20% 90%;
+  --input: 215 20% 90%;
+  --ring: 215 70% 38%;
+
+  --app-font-sans: 'Inter', sans-serif;
+  --app-font-serif: 'Fraunces', Georgia, serif;
+  --app-font-mono: Menlo, monospace;
+  
+  --radius: 0rem;
+}
+
+.dark {
+  --background: 0 0% 100%;
+  --foreground: 220 50% 12%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 220 50% 12%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 50% 12%;
+  
+  --primary: 215 70% 38%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 210 70% 55%;
+  --secondary-foreground: 0 0% 100%;
+  
+  --muted: 215 25% 96%;
+  --muted-foreground: 215 15% 45%;
+  
+  --accent: 215 25% 96%;
+  --accent-foreground: 215 70% 38%;
+  
+  --destructive: 0 65% 50%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 215 20% 90%;
+  --input: 215 20% 90%;
+  --ring: 215 70% 38%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground selection:bg-secondary/20 selection:text-secondary;
+    /* Subtle noise texture */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-normal tracking-tight;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
