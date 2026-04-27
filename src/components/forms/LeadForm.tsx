@@ -59,7 +59,7 @@ export function LeadForm({ onSuccess }: { onSuccess?: () => void }) {
 
   if (isSubmitted) {
     // TODO: Replace with the actual WhatsApp number
-    const waNumber = "910000000000"; 
+    const waNumber = "919993512608";
     const waText = encodeURIComponent("Hi, I registered on your website. Please assist.");
     const waLink = `https://wa.me/${waNumber}?text=${waText}`;
 
