@@ -1,8 +1,8 @@
 "use client"
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, Variants } from "framer-motion";
 
-const draw = {
+const draw: Variants = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: (custom: number = 0) => ({
     pathLength: 1,
